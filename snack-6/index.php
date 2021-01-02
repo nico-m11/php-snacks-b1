@@ -38,6 +38,7 @@
     </style>
   </head>
   <body>
+    <h1>Esercizio n°6</h1>
     <?php
       /*Stampiamo il nostro array mettendo gli insegnanti in un rettangolo grigio
       e i PM in un rettangolo verde. 'utilizzando l'array fornito con il link*/
@@ -69,15 +70,15 @@
       if ($key == 'teachers') { //vedo se è uguale a teachers
         foreach ($value as $ecc) { //ri-ciclo per avere anche i nomi
           //var_dump($ecc);
-          ?>
+    ?>
         <div class="container-di-tutto">
           <div class="container-gray">
             <ul><b>
               <?php echo $key; //stampo ?>
             </b><li>
-               <?php
+  <?php
                   echo $ecc['name'] . ' ' . $ecc['lastname']; // stampo nome
-               ?>
+   ?>
               </li>
              </ul>
           </div>
@@ -86,21 +87,21 @@
       }
     }
   ?>
-<?php // stessa operazione effetuata sotto 
+<?php // stessa operazione effetuata sotto
   foreach ($db as $key => $value) {
     //var_dump($key);
     if ($key == 'pm') {
       foreach ($value as $ecc) {
         //var_dump($ecc);
-        ?>
+ ?>
 
         <div class="container-green">
           <ul><b>
             <?php echo $key; ?>
           </b><li>
-             <?php
+  <?php
                 echo $ecc['name'] . ' ' . $ecc['lastname'];
-             ?>
+   ?>
             </li>
            </ul>
         </div>
